@@ -23,3 +23,14 @@ The output returns a list of open non-listening sockets with established connect
 
 
 ![image](https://user-images.githubusercontent.com/105453604/176179741-f733eba3-1c54-4a77-ae0e-c211892ff53e.png)
+
+How ss is setup and what it can display
+  - ss [options] [ FILTER ]
+  
+  - when no options options are used ss displays a list of open non-listening sockets that have an established connection.
+  - ss -t -a 
+    - Displays all TCP socket
+  - ss -t -a -Z
+    - This Displays all TCP sockets with process SELinux security contexts.
+  
+[ss -tlZ.txt](https://github.com/PigPotato100/JQR/files/9001366/ss.-tlZ.txt)
