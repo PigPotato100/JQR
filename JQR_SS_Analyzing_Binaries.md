@@ -30,7 +30,9 @@ How ss is setup and what it can display
   - when no options options are used ss displays a list of open non-listening sockets that have an established connection.
   - ss -t -a 
     - Displays all TCP socket
-  - ss -t -a -Z
-    - This Displays all TCP sockets with process SELinux security contexts.
-  
-[ss -tlZ.txt](https://github.com/PigPotato100/JQR/files/9001366/ss.-tlZ.txt)
+  - ss -t -l -Z
+    - This Displays only listening sockets with process SELinux security contexts.
+      - [ss -tlZ.txt](https://github.com/PigPotato100/JQR/files/9001366/ss.-tlZ.txt)
+
+
+
