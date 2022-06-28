@@ -9,7 +9,7 @@ Analyze a linux binary to determine the following:
   - Kernel Modules used
   - External connections and/or attempts to connect
   - Files utilized/written to
-
+cle
 The purpose of the ss (socket statistics) is used to show network statistics.
 SS is essential for gathering network information and troubleshooting network issues.
 
@@ -26,13 +26,18 @@ The output returns a list of open non-listening sockets with established connect
 
 How ss is setup and what it can display
   - ss [options] [ FILTER ]
-  
   - when no options options are used ss displays a list of open non-listening sockets that have an established connection.
   - ss -t -a 
     - Displays all TCP socket
   - ss -t -l -Z
     - This Displays only listening sockets with process SELinux security contexts.
       - [ss -tlZ.txt](https://github.com/PigPotato100/JQR/files/9001366/ss.-tlZ.txt)
+      
+This command filters connections by port number.
+  - ss -at '( dport = :22 or sport = :22 )'
+    ![image](https://user-images.githubusercontent.com/105453604/176196760-d6ddc9ac-2140-4664-aa1e-4fef887d6605.png)
+
+  
 
 
 
