@@ -22,3 +22,4 @@ The output returns a list of open non-listening sockets with established connect
   - Peer address:port – Address of remote machine and port.
 
 
+![image](https://user-images.githubusercontent.com/105453604/176179741-f733eba3-1c54-4a77-ae0e-c211892ff53e.png)
